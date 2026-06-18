@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+.header {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  padding: 30px 60px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header p {
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.control-panel,
+.viewer,
+.results {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.control-panel h2,
+.results h2 {
+  margin-top: 0;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+button,
+.upload-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+button:hover,
+.upload-btn:hover {
+  background: #1d4ed8;
+}
+
+button.danger {
+  background: #dc2626;
+}
+
+button.danger:hover {
+  background: #b91c1c;
+}
+
+.settings {
+  margin: 16px 0;
+}
+
+.settings label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-box {
+  background: #eef2ff;
+  border-left: 4px solid #2563eb;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.canvas-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #111827;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.results span {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
